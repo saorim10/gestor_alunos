@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Alunos</title>
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap fim -->
+
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info mb-5">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/music.png" width="50" height="40" alt="Gestor de Alunos">
+                <div class="badge badge-primary text-wrap" style="width: 12rem;">
+                    Escola de Música
+                  </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="consulta.html">Consulta</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mb-1">
+                <h2 class="display-6">Novo Aluno</h2>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 bg-light">
+            <div class="col-md-4 bg-light">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" />
+            </div>
+
+            <div class="col-md-3 bg-light">
+                <label for="curso">Curso</label>
+                <select class="form-control" id="curso">
+                    <option value=""> </option>
+                    <option value="Canto">Canto</option>
+                    <option value="Violão">Violão</option>
+                    <option value="Teclado">Teclado</option>
+                    <option value="Saxofone">Saxofone</option>
+                    <option value="Flauta">Flauta</option>
+                    <option value="Gaita">Gaita</option>
+                    <option value="Baixo">Baixo</option>
+                    <option value="Bateria">Bateria</option>
+                    <option value="Escaleta">Escaleta</option>
+                    <option value="Guitarra">Guitarra</option>
+                    <option value="Cavaquinho">Cavaquinho</option>
+                    <option value="Ukulele">Ukulele</option>
+                    <option value="Ocarina">Ocarina</option>
+                    <option value="Clarineta">Clarineta</option>
+                </select>
+            </div>
+
+            <div class="col-md-3 bg-light">
+                <label for="professor">Professor</label>
+                <select class="form-control" id="professor">
+                    <option value=""> </option>
+                    <option value="Marcelo Saorim">Marcelo Saorim</option>
+                    <option value="Selma Saorim">Selma Saorim</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-2 bg-light">
+
+            <div class="col-md-2">
+                <label for="escola">Escola</label>
+                <select class="form-control" id="escola">
+                    <option value=""> </option>
+                    <option value="Particular">Particular</option>
+                    <option value="E-Brasil">E-Brasil</option>
+                    <option value="Forte das Artes">Forte das Artes</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label for="local">Local da Aula</label>
+                <select class="form-control" id="local">
+                    <option value=""> </option>
+                    <option value="On-line">On-Line</option>
+                    <option value="Presencial">Presencial</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="dia da aula">Dia da Aula</label>
+                <select class="form-control" id="diaAula">
+                    <option value=""> </option>
+                    <option value="Segunda">Segunda</option>
+                    <option value="Terça">Terça</option>
+                    <option value="Quarta">Quarta</option>
+                    <option value="Quinta">Quinta</option>
+                    <option value="Sexta">Sexta</option>
+                    <option value="Sábado">Sábado</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label for="horario">Horário</label>
+                <select class="form-control" id="horaAula">
+                    <option value=""> </option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-2 bg-light">
+
+            <div class="col-md-4">
+                <label for="celula">Número Celular</label>
+                <input type="text" class="form-control" id="celular" />
+
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" />
+            </div>
+
+            
+            <div class="col-md-3">
+                <div>
+                    <label>Data da Matrícula</label>
+                    <input type="date" name="dataMatricula" class="datepicker" />
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+                <label>Experiência</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                    value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Iniciante
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                    value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Médio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                    value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Avançado
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <p></p>
+                    <input type="checkbox" class="form-check-input" id="ativoCheck">
+                    <label class="form-check-label" for="exampleCheck1">Aluno Ativo</label>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">Gravar</button>
+        
+    </body>
+    
+    </html>
